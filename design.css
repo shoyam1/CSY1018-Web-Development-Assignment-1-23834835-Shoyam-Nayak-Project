@@ -34,8 +34,8 @@ body {
   list-style-type: none;
   margin-left: 80px;
   cursor: pointer;
-  font-size: 16px;
-  font-family: cursive;
+  font-size: 1.1rem;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
@@ -45,7 +45,9 @@ body {
 
 a.active,
 a:hover {
-  background-color: rgb(99, 99, 99);
+  background-color: chocolate;
+  box-shadow: 0 0 10px chocolate;
+  color: black;
   transition: .6s;
 }
 
@@ -247,7 +249,7 @@ h3 {
     display: flex;
     flex-direction: row-reverse;
   }
-
+  
   .information-section {
     width: 100%;
     height: 50vh;
