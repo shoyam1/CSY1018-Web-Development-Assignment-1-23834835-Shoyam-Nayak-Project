@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+* {
+  color: white;
+}
+
+/*navigation bar css*/
+
+.navigation {
+
+  padding: 20px;
+  height: 13vh;
+  display: flex;
+}
+
+.navigation-menu {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin-left: 80px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  background-color: rgb(99, 99, 99);
+  transition: .6s;
+}
+
+/*hamburger*/
+.check-icon {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Main page */
+
+
+
+
+
+.information-section {
+
+  padding: 80px;
+  height: 90vh;
+  text-align: center;
+}
+
+.greeting-text {
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.name-text {
+  font-family: cursive;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.name-text span {
+  color: rgb(215, 174, 39);
+}
+
+.detail-text {
+  font-family: cursive;
+  font-size: 25px;
+
+}
+
+
+
+/* Footer */
+.footer-section {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 32px;
+  height: 55px;
+  margin: 0px;
+
+}
+
+.footer-text {
+  font-size: 15px;
+  color: white;
+}
+
+/*portfolio page css*/
+
+
+
+.contactSection {
+  text-align: center;
+
+}
+
+/*css for contact form */
+
+
+.contact-section {
+  text-align: center;
+  height: 80vh;
+  font-size: 20px;
+  padding: 0px;
+
+}
+
+fieldset {
+  height: 600px;
+  margin-top: 0px;
+}
+
+input {
+  width: 300px;
+  border: 3px solid rgb(73, 73, 73);
+  text-align: center;
+  border-radius: 18px;
+  height: 30px;
+  background: rgb(249, 246, 246);
+
+}
+
+.button {
+  margin-bottom: 0px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 30px;
+  margin-top: 80px;
+  font-weight: bold;
+  color: black;
+}
+
+
+/* CSS for Work_Experience page */
+.experience-page {
+  height: 90vh;
+}
+
+.experience-writing {
+  text-align: center;
+  font-size: 35px;
+  height: 10vh;
+  margin-top: 10px;
+
+}
+
+.Sharing_Experience {
+  text-align: center;
+  font-size: 25px;
+  font-family: initial;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/*site report css*/
+.report {
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 20px;
+  padding-left: 10px;
+
+
+  font-family: initial;
+  justify-content: center;
+
+}
+
+/*images in site report*/
+.validtop {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+
+}
+
+.grid_images {
+  width: 495px;
+  height: 300px;
+  margin: 5px;
+}
+
+.CssImage {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.CssImage img {
+  width: 600px;
+  height: 300px;
+  margin: 2px;
+
+}
+
+
+h3 {
+  text-align: center;
+}
+
+.ref_head {
+  text-align: center;
+}
+
+.button:hover {
+  background: rgb(102, 102, 102);
+  color: white;
+}
+
+/*media query*/
+
+@media screen and (max-width: 768px) {
+
+  /*homepage*/
+
+  .main-content {
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .information-section {
+    width: 100%;
+    height: 50vh;
+    margin: 0px;
+  }
+
+  .greeting-text {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .name-text span {
+    color: forestgreen;
+    font-size: 27px;
+
+  }
+
+  .name-text {
+
+    font-size: 25px;
+  }
+
+  .detail-text {
+
+    font-size: 25px;
+  }
+
+
+
+  /*portfolio*/
+  .portfolio-wrapper {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  /*experience*/
+
+  .experience-page {
+    height: auto;
+  }
+
+  .experience-writing {
+    text-align: center;
+    font-size: 25px;
+    height: 10vh;
+    margin-top: 10px;
+
+  }
+
+  /* site report css  */
+  .validtop {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+
+  }
+
+  .CssImage {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  /*hamburger*/
+  .check-icon {
+    display: block;
+  }
+
+  .navigation-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -250%;
+    text-align: center;
+    transition: all .5s;
+    background-image: url(https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&w=1000&q=80);
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation-menu li {
+    display: block;
+    margin: 30px 0;
+  }
+
+  #check:checked~.navigation-menu {
+    left: 0;
+  }
+
+
+
+}
